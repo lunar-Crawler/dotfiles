@@ -1,0 +1,66 @@
+{
+    "logo": {
+        "source": "/home/lc/.config/fastfetch/CAFOO.txt",
+        "padding": {
+            "top": 2,
+            "right": 6
+        }
+    },
+    "display": {
+        "separator": " "
+    },
+    "modules": [
+	"break",
+	"break",
+	{
+            "type": "title",
+            "keyWidth": 10
+        },
+        "break",
+        {
+            "type": "os",
+            "key": "OSYS.",
+            "keyColor": "33",  // = color3
+        },
+        {
+            "type": "kernel",
+            "key": "KERN.",
+            "keyColor": "33",
+        },
+        {
+            "type": "packages",
+            "format": "{} (pacman)",
+            "key": "PKGS.",
+            "keyColor": "33",  
+        },
+        {
+            "type": "shell",
+            "key": "SHEL.",
+            "keyColor": "33", 
+        },
+        {
+            "type": "terminal",
+            "key": "TERM.",
+            "keyColor": "33", 
+        },
+        {
+            "type": "wm",
+            "key": "WINM.",
+            "keyColor": "33", 
+        },
+        {
+            "type": "uptime",
+            "key": "UPTM.",
+            "keyColor": "33", 
+        },
+        {
+            "type": "media",
+            "key": "MUSC.",
+            "keyColor": "33", 
+        },
+        "break",
+        "colors",
+        "break",
+        "break",
+    ]
+}
