@@ -25,7 +25,7 @@ disable-notifications = true
 
 # Font to use for text annotations
 [font]
-family = "Departure Mono"
+family = "Pixel Operator Mono"
 style = "Regular"
 
 # Custom colours for the colour palette
