@@ -1,0 +1,175 @@
+{
+	"layer": "top",	
+	"position": "top",
+    "height": 40,
+    "margin": 10,
+    "spacing": 5,
+
+
+"modules-left": [
+    "custom/band",
+    "custom/bl",
+    "idle_inhibitor",
+    "custom/br",
+    "custom/bl",
+    "hyprland/workspaces",
+    "custom/br"
+    ],
+
+
+"modules-center": [
+    "custom/bl",
+    "hyprland/window",
+    "custom/br"
+    ],
+
+
+"modules-right": [
+    "custom/bl",
+    "tray",
+    "custom/br",
+    "custom/bl",
+    "network",
+    "custom/br",
+    "custom/bl",
+    "custom/swaync",
+    "custom/br",
+    "custom/bl",
+    "custom/wttr",
+    "custom/br",
+    "custom/bl",
+    "clock",
+    "custom/br",
+    "custom/band"
+    ],
+
+
+"hyprland/workspaces": {
+	"disable-scroll": true,
+	"disable-click": false,
+	"on-click": "activate",
+	"format": "{}"
+},
+
+"idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+        "activated": "+",
+        "deactivated": "-"
+    }
+},
+
+"hyprland/window": {
+    "format": "<i>{}</i>",
+    "max-length": 60,
+    "separate-outputs": true
+},
+
+
+"tray": {
+    "icon-size": 16,
+    "spacing": 15
+},
+
+
+"clock": {
+    "interval": 1,
+    "format": "{:%H:%M:%S}",
+	"tooltip": true,
+	"tooltip-format": "<small>{calendar}</small>",
+	"height": 24,
+	"on-click": "exec kitty --title Calcurse calcurse",
+	"calendar": {
+	"mode"          : "month",
+	"weeks-pos"     : "left",
+	"on-scroll"     : 1,
+	"format": {
+	"months":     "<span color='#CCCCCC'><b>{}</b></span>",
+	"weeks":      "<span color='#646464'><b>W{}</b></span>",
+	"weekdays":   "<span color='#CCCCCC'><b>{}</b></span>",
+	"days":       "<span color='#828282'><b>{}</b></span>",
+	"today":      "<span color='#CCCCCC'><b><u>{}</u></b></span>"
+                }
+        },
+	"actions":  {
+	"on-scroll-up": "shift_up",
+	"on-scroll-down": "shift_down"
+}},
+
+    
+"battery": {
+    "bat": "BAT0",
+    "states": {
+    "full": 99,
+    "good": 98,
+    "normal": 98,
+    "warning": 20,
+    "critical": 20
+},
+
+    "format": "{icon}   {capacity}%",
+    "format-good": "{icon}   {capacity}%",
+    "format-full": "BAT.{capacity}%",
+    "format-icons": ["", "", "", "", ""],
+    "interval": 35
+},
+
+
+"network": {
+    "format": "NET.{essid}",
+    "format-disconnected": "DISCONNECTED.",
+    "tooltip-format": "NET.{essid} {frequency}MHz\nStrength: {signaldBm}dBm ({signalStrength}%)\nIP: {ipaddr}/{cidr}\nUP.{bandwidthUpBits} DOWN.{bandwidthDownBits}",
+    "interval": 3,
+    "on-click": "exec kitty --title bar-nmtui nmtui"
+},
+
+"pulseaudio": {
+    "format": "SPK.{volume}%",
+    "format-bluetooth": "BTH.{volume}%  ",
+    "format-muted":"MUTED.",
+    "interval": 60
+},
+
+"custom/swaync": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+    "notification": "!",
+    "none": "...",
+    "dnd-notification": "?",
+    "dnd-none": "X"
+},
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "sleep 0.1 && swaync-client -t -sw",
+    "on-click-right": "sleep 0.1 && swaync-client -d -sw",
+    "escape": true
+},
+
+"custom/wttr": {
+    "format": "{}°",
+    "tooltip": true,
+    "interval": 3600,
+    "exec": "wttrbar --location Mesquite --hide-conditions",
+    "return-type": "json"
+},
+
+"custom/br": {
+    "format": "]",
+    "interval": "once",
+    "tooltip": false
+},
+
+"custom/bl": {
+    "format": "[",
+    "interval": "once",
+    "tooltip": false
+},
+
+"custom/band": {
+    "format": " ",
+    "interval": "once",
+    "tooltip": false
+}
+}
