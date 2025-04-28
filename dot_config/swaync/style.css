@@ -1,4 +1,4 @@
-@import '/home/lc/.cache/wal/colors-waybar.css';
+@import "../../.cache/wal/colors-waybar.css";
 
 @define-color noti-border-color @color10;
 @define-color noti-bg @background;
