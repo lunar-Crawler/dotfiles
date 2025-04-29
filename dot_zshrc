@@ -103,6 +103,6 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias STORE="paru -Slq | sk --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
-alias TRASH-COMPACTOR="paru -Qq | sk --multi --preview 'paru -Qi {1}' | xargs -ro paru -Rns"
+alias TRASH-COMPACTOR="paru -Qeq | sk --multi --preview 'paru -Qi {1}' | xargs -ro paru -Rns"
 
 eval $(thefuck --alias)
