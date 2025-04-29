@@ -107,10 +107,9 @@
     "critical": 20
 },
 
-    "format": "{icon}   {capacity}%",
-    "format-good": "{icon}   {capacity}%",
+    "format": "BAT.{capacity}%",
+    "format-good": "BAT.{capacity}%",
     "format-full": "BAT.{capacity}%",
-    "format-icons": ["", "", "", "", ""],
     "interval": 35
 },
 
