@@ -1,5 +1,5 @@
 # REQUIRED PACKAGES
-hyprland ( OBVIOUSLY )
+hyprland ( OBVIOUSLY )  
 hyprpolkitagent
 hypridle
 hyprlock
