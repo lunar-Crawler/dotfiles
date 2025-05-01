@@ -10,6 +10,7 @@ walker
 swaync
 swaybg
 pywal16
+nvim
 
 ## TECHNICALLY OPTIONAL
 clipse
