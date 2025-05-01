@@ -1,4 +1,4 @@
-## REQUIRED PACKAGES
+# REQUIRED PACKAGES
 hyprland ( OBVIOUSLY )
 hyprpolkitagent
 hypridle
@@ -11,7 +11,7 @@ swaync
 swaybg
 pywal16
 
-# TECHNICALLY OPTIONAL
+## TECHNICALLY OPTIONAL
 clipse
 calcurse
 hyprcursor
@@ -21,4 +21,4 @@ grimblast
 satty
 nemo
 
-# SHOWCASE
+## SHOWCASE
