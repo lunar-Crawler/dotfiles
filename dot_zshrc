@@ -105,6 +105,7 @@ source $ZSH/oh-my-zsh.sh
 alias store="paru -Slq | sk --multi --preview 'paru -Si {1}' | xargs -ro paru -S"
 alias trash-compactor="paru -Qeq | sk --multi --preview 'paru -Qi {1}' | xargs -ro paru -Rns"
 alias bcdl="bandcamp-dl -e -r -s - -x upper --base-dir /home/lc/STUFF/MEDIA/MUSIC --template %{artist}/%{album}/%{track}-%{title}"
+alias edit-hyprland="chezmoi edit ~/.config/hypr/hyprland.conf ; chezmoi diff"
 
 eval $(thefuck --alias)
 
