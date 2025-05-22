@@ -107,3 +107,5 @@ alias trash-compactor="paru -Qeq | sk --multi --preview 'paru -Qi {1}' | xargs -
 alias bcdl="bandcamp-dl -e -r -s - -x upper --base-dir /home/lc/STUFF/MEDIA/MUSIC --template %{artist}/%{album}/%{track}-%{title}"
 
 eval $(thefuck --alias)
+
+fastfetch
