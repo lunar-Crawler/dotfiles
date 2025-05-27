@@ -73,7 +73,7 @@
 
 
 "clock": {
-    "interval": 0.1,
+    "interval": 5,
     "format": "{:%H:%M:%S}",
 	"tooltip": true,
 	"tooltip-format": "<small>{calendar}</small>",
@@ -82,7 +82,7 @@
 	"calendar": {
 	"mode"          : "month",
 	"weeks-pos"     : "left",
-	"on-scroll"     : 1,
+	"on-scroll"     : 1/home/lc/.config/waybar/config.jsonc,
 	"format": {
 	"months":     "<span color='#CCCCCC'><b>{}</b></span>",
 	"weeks":      "<span color='#646464'><b>W{}</b></span>",
